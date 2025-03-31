@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 font-['Poppins']">
+    <!-- Same as before -->
+    <section id="name-section" class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-8 rounded-2xl shadow-xl max-w-md w-full transform transition-all hover:scale-105">
+            <h1 class="text-3xl font-bold text-center text-indigo-600 mb-6">Welcome to Quiz Master</h1>
+            <div class="space-y-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                <input 
+                    id="name" 
+                    type="text" 
+                    class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                    placeholder="Enter your name"
+                >
+                <p id="name-error" class="text-red-500 text-sm hidden">Name is required</p>
+                <button 
+                    onclick="submitName()"
+                    class="w-full bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 transition-colors font-semibold"
+                >
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Rest of the sections remain unchanged -->
+    <section id="category-section" class="hidden flex items-center justify-center min-h-screen">...</section>
+    <section id="quiz-section" class="hidden flex items-center justify-center min-h-screen">...</section>
+    <section id="result-section" class="hidden flex items-center justify-center min-h-screen">...</section>
+
+    <script src="/script.js"></script>
+</body>
+</html>

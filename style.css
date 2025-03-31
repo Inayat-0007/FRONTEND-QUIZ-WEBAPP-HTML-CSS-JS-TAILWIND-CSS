@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-in-out;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+.bg-white {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* More specific selector for options */
+#quiz-section #options button {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #d1d5db;
+}
+
+#quiz-section #options button:hover:not(:disabled) {
+    background-color: #eef2ff;
+}
